@@ -17,3 +17,8 @@ test:
 build:
 	poetry install
 	poetry build
+
+install:
+	pip install -U pip poetry
+	poetry config virtualenvs.create false
+	poetry install
